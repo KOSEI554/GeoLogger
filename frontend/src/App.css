@@ -5,6 +5,68 @@
   text-align: center;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.controls {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.map-container {
+  width: 100%;
+  height: 70vh; /* 画面の高さの70%を使用 */
+  min-height: 500px; /* 最小高さを保証 */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* スマホ向けの調整 */
+@media (max-width: 768px) {
+  .map-container {
+    height: 60vh;
+  }
+}
+
+.info {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3367d6;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
